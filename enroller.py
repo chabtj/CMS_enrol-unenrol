@@ -40,7 +40,7 @@ passWordBox.send_keys(Keys.ENTER)
 print("Logged in successfully.")
 sleep(10.0)
 
-def bye_bye(course): # unenroller fucntion 
+def hi(course): # unenroller fucntion 
     inputElement = driver.find_element_by_partial_link_text('All courses')
     inputElement.send_keys(Keys.ENTER)
     sleep(1.0)
@@ -63,7 +63,7 @@ def bye_bye(course): # unenroller fucntion
 
 courses=course_lists.splitlines()
 for course  in courses:
-    bye_bye(course+ ' Sem 2 2021-22')
+    hi(course+ ' Sem 2 2021-22')
     print(course)
 print("done enroling")
     
