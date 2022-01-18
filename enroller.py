@@ -1,3 +1,5 @@
+# Refer to the unenroler script for initial instructions.
+# Edit the editable part as per your requirement.
 from time import sleep 
 from selenium import webdriver
 from selenium import webdriver 
@@ -11,7 +13,7 @@ from selenium.webdriver.common.keys import Keys
 ## EDITABLE PART BELOW ##
 ########################################################
 course_lists='''BIO F110 BIOLOGY LABORATORY P
-BIO F110 BIOLOGY LABORATORY P3'''                           ## copy all the courses u wanna unenroll from 
+BIO F110 BIOLOGY LABORATORY P3'''                           ## copy all the courses u wanna enroll from 
 email='f20xxyyyy@hyderabad.bits-pilani.ac.in'               ## enter the ur gmail account here 
 password='password'                                         ## enter your gmail password here  
 path_of_driver='/Users/tejasvichabbra/Desktop/chromedriver' ## path where the driver is installed 
@@ -40,7 +42,7 @@ passWordBox.send_keys(Keys.ENTER)
 print("Logged in successfully.")
 sleep(10.0)
 
-def hi(course): # unenroller fucntion 
+def hi(course): # enroller fucntion 
     inputElement = driver.find_element_by_partial_link_text('All courses')
     inputElement.send_keys(Keys.ENTER)
     sleep(1.0)
